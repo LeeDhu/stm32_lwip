@@ -3,3 +3,5 @@ OUTPUT/
 USER/*.dep
 USER/*.bak
 USER/*asus*
+cscope*
+tags
