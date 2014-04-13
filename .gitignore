@@ -1,0 +1,5 @@
+LISTING/
+OUTPUT/
+USER/*.dep
+USER/*.bak
+USER/*asus*
