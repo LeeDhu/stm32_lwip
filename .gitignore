@@ -1,7 +1,7 @@
 LISTING/
 OUTPUT/
-USER/*.dep
-USER/*.bak
-USER/*asus*
+Project/*.dep
+Project/*.bak
+Project/*asus*
 cscope*
 tags
