@@ -1,5 +1,6 @@
 LISTING/
 OUTPUT/
+Project/
 Project/*.dep
 Project/*.bak
 Project/*asus*
