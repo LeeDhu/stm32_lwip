@@ -162,9 +162,9 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4096</DriverSelection>
+            <DriverSelection>4099</DriverSelection>
           </Flash1>
-          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash2>Segger\JL2CM3.dll</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
         </Utilities>
@@ -348,7 +348,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS;..\FWLIB\inc;..\LWIP\src\api;..\LWIP\src\core;..\LWIP\src\include;..\USER</IncludePath>
+              <IncludePath>..\CMSIS;..\FWLIB\inc;..\LWIP\src\api;..\LWIP\src\core;..\LWIP\src\include;..\USER;..\LWIP\src\include\ipv4;..\LWIP\src\include\netif;..\LWIP\src\include\lwip;..\LWIP\src\arch;..\LWIP\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -404,24 +404,9 @@
               <FilePath>..\CMSIS\core_cm3.c</FilePath>
             </File>
             <File>
-              <FileName>core_cm3.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\CMSIS\core_cm3.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\CMSIS\stm32f10x.h</FilePath>
-            </File>
-            <File>
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CMSIS\system_stm32f10x.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f10x.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\CMSIS\system_stm32f10x.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -549,19 +534,59 @@
           <GroupName>USER</GroupName>
           <Files>
             <File>
-              <FileName>stm32f10x_conf.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\USER\stm32f10x_conf.h</FilePath>
-            </File>
-            <File>
               <FileName>stm32f10x_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\stm32f10x_it.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f10x_it.h</FileName>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>enc28j60.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\enc28j60.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>ticks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\ticks.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>LWIP_ARCH</GroupName>
+          <Files>
+            <File>
+              <FileName>cc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\USER\stm32f10x_it.h</FilePath>
+              <FilePath>..\LWIP\src\arch\cc.h</FilePath>
+            </File>
+            <File>
+              <FileName>lwipopts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\LWIP\src\arch\lwipopts.h</FilePath>
+            </File>
+            <File>
+              <FileName>perf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\LWIP\src\arch\perf.h</FilePath>
+            </File>
+            <File>
+              <FileName>sys_arch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LWIP\src\arch\sys_arch.c</FilePath>
             </File>
           </Files>
         </Group>
